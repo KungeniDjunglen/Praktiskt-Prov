@@ -1,0 +1,14 @@
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.AssemblyInfoInputs.cache
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.AssemblyInfo.cs
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\bin\Debug\net7.0\Praktiskt-Prov.exe
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\bin\Debug\net7.0\Praktiskt-Prov.deps.json
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\bin\Debug\net7.0\Praktiskt-Prov.runtimeconfig.json
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\bin\Debug\net7.0\Praktiskt-Prov.dll
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\bin\Debug\net7.0\Praktiskt-Prov.pdb
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.dll
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\refint\Praktiskt-Prov.dll
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.pdb
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\Praktiskt-Prov.genruntimeconfig.cache
+C:\Users\Admin\Documents\GitHub\Slutprojekt\Slutprojekt\Slutprojekt\Slutprojekt\Praktiskt-Prov\obj\Debug\net7.0\ref\Praktiskt-Prov.dll
