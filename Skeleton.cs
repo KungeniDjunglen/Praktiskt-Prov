@@ -2,7 +2,7 @@ namespace Praktiskt_Prov
 {
     public class Skeleton: Creature
     {
-        public Skeleton(): base(100, 25, "Skeleton", 200){
+        public Skeleton(): base(100, 25, "Skeleton", 200){ //Bestämmer fiendens stats
             
         }
     }
