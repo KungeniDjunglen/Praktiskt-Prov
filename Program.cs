@@ -1,12 +1,12 @@
-﻿using System.Security.Cryptography.X509Certificates;
-using Praktiskt_Prov;
+﻿using Praktiskt_Prov;
 
-//Att göra:
-// Unika karaktärsdrag
+// Att göra:
+// Unika karaktärsdrag - fixat kanske
 // Kommentera
-// Mer än 1 drabbning
+// Mer än 1 drabbning - Fixat
 // Väldokumenterad kod
-// Förbättra Enemy turn
+// Förbättra Enemy turn - fixat
+// Inkapsla - fixat
 
 
 class Program{
@@ -21,6 +21,7 @@ class Program{
         Console.WriteLine("Välkommen till spelet. Välj ett av alternativen nedanför:");
         Console.WriteLine("1. Spela");
         Console.WriteLine("2. Scoreboard");
+        Console.WriteLine("3. Avsluta");
 
         int val = int.Parse(Console.ReadLine());
         switch (val){
@@ -31,11 +32,14 @@ class Program{
             case 2: // Skriver ut scoreboard
             ScoreBoard();
                 break;
+            case 3:
+                break;
         }
     }
     private void Setup(){
         creatures = new List<Creature>();
 
+        //Skapar fienderna
         Console.Write("Hur många fienden vill du möta ? ");
         int EnemyAmount = int.Parse(Console.ReadLine());
         Random rng = new Random();
@@ -73,11 +77,11 @@ class Program{
             switch(val){ //Spelaren gör sitt
                 case 1:
                 creatures[0].Health -= player.Damage;
-                if (creatures[0].Health <= 0){
+                if (creatures[0].Health <= 0){       //Detta gör så att spelaren kan attackera direkt efter att ha dödat en fiende
                     TotalScore += creatures[0].Score;
                     creatures.RemoveAt(0);
                 }
-                else{
+                else{ 
                     EnemyTurn();
                 }
                     break;
@@ -87,8 +91,7 @@ class Program{
                     break;
             }
 
-            //Fienedens tur
-
+            //Kollar om någon har vunnit
             if (creatures.Count < 1){
                 //Du vann
                 GameOn = false;
@@ -104,7 +107,11 @@ class Program{
     }
 
     private void EnemyTurn(){
-        player.Health -= creatures[0].Damage;
+        bool attack = creatures[0].Attack(player);
+        if(attack){ //Spelaren har blivit träffad av special attack. Bara sniglen har en sådan och du blir förlamad i 1 runda.
+            Thread.Sleep(5000);
+            EnemyTurn();
+        }
 
     }
 
@@ -121,12 +128,24 @@ class Program{
         if (!WhoWon){
             Console.WriteLine("Du förlorade");
         }
+        Console.WriteLine("Du fick " + TotalScore + " poäng");
+
+        // Hämtar tidigare sparad data
         StreamReader sr = new StreamReader("scoreboard.txt");
         string data = sr.ReadToEnd();
         sr.Close();
+
+        // Skriver ut ny data och även den gammla.
         StreamWriter sw = new StreamWriter("scoreboard.txt");
         sw.Write(data + TotalScore + ".");
         sw.Close();
+
+        //Gör så att spelaren kan köra igen
+        Console.Write("Vill du spela igen (y/n) ? ");
+        string val = Console.ReadLine().ToLower();
+        if(val == "y"){
+            MainMenu();
+        }
     }
 
     private void ScoreBoard(){
@@ -152,8 +171,11 @@ class Program{
         //Sorterar datan
         scoreList.Sort();
         scoreList.Reverse();
+
+        //Skriver ut scoreboarden
         for (int x = 0; x < 3 && scoreList.Count > x; x++ ){
             Console.WriteLine(scoreList[x]);
         }
+        MainMenu();
     }
 }

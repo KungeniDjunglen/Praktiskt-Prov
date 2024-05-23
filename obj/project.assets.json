@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Praktiskt-Prov\\Praktiskt-Prov.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\GitHub\\filhantering\\Ny mapp\\ajalla\\Praktiskt-Prov\\Praktiskt-Prov.csproj",
       "projectName": "Praktiskt-Prov",
-      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Praktiskt-Prov\\Praktiskt-Prov.csproj",
+      "projectPath": "C:\\Users\\Admin\\Documents\\GitHub\\filhantering\\Ny mapp\\ajalla\\Praktiskt-Prov\\Praktiskt-Prov.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Slutprojekt\\Praktiskt-Prov\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\GitHub\\filhantering\\Ny mapp\\ajalla\\Praktiskt-Prov\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
